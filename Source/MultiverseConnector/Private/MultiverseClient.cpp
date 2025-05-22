@@ -41,7 +41,8 @@ TMap<EAttribute, TArray<double>> AttributeDoubleDataMap =
 		{EAttribute::CmdJointTorque, {0.0}},
 		{EAttribute::CmdJointForce, {0.0}},
 		{EAttribute::JointPosition, {0.0, 0.0, 0.0}},
-		{EAttribute::JointQuaternion, {1.0, 0.0, 0.0, 0.0}}};
+		{EAttribute::JointQuaternion, {1.0, 0.0, 0.0, 0.0}},
+		{EAttribute::RelativeVelocity, {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}}};
 
 TMap<EAttribute, TArray<uint8_t>> AttributeUint8DataMap =
 	{
@@ -84,7 +85,8 @@ const TMap<FString, EAttribute> AttributeStringMap =
 		{TEXT("depth_3840_2160"), EAttribute::Depth_3840_2160},
 		{TEXT("depth_1280_1024"), EAttribute::Depth_1280_1024},
 		{TEXT("depth_640_480"), EAttribute::Depth_640_480},
-		{TEXT("depth_128_128"), EAttribute::Depth_128_128}};
+		{TEXT("depth_128_128"), EAttribute::Depth_128_128},
+		{TEXT("relative_velocity"), EAttribute::RelativeVelocity}};
 
 UTextureRenderTarget2D *RenderTarget_RGBA8_3840_2160;
 UTextureRenderTarget2D *RenderTarget_RGBA8_1280_1024;
